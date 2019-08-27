@@ -16,7 +16,7 @@ FSJS project 2 - List Filter and Pagination
    will only be used inside of a function, then it can be locally 
    scoped to that function.
 ***/
-const listItem = document.getElementsByClassName('student-item');
+const listItem = document.getElementsByClassName('student-item')
 const studentsPerPage = 10;
 
 
@@ -38,10 +38,10 @@ const studentsPerPage = 10;
 ***/
 function showPage(list, page) {
    const startIndex = (page * studentsPerPage) - studentsPerPage;
-   const endIndex = (page * studentsPerPage) -1;
+   const endIndex = (page * studentsPerPage) - 1;
 
-   for(let i = 0; i < list.length; i+= 1) {
-      if ((i >= startIndex) && (i <=endIndex)) {
+   for(let i = 0; i < list.length; i += 1) {
+      if ((i >= startIndex) && (i <= endIndex)) {
          list[i].style.display = '';
       }
       else {
@@ -57,8 +57,43 @@ function showPage(list, page) {
    functionality to the pagination buttons.
 ***/
 
+function appendPageLinks(list) {
+   const numberOfPages = Math.round((list.length / studentsPerPage) + 1);
+   const container = document.querySelector('.page');
+   const paginationDiv = document.createElement('div');
+   paginationDiv.className = 'pagination';
+   const ul = document.createElement('ul');
 
+      for (let i = 1; i <= numberOfPages; i += 1) {
+         const li = document.createElement('li');
+         const a = document.createElement('a');
+         a.textContent = i;
+         a.href = '#';
+         li.appendChild(a);
+         ul.appendChild(li);
 
+         if (i === 1) {
+            a.className = 'active';
+         }
+
+         li.addEventListener('click', (event) => {
+            const clickLinks = document.querySelectorAll('a');
+            const isClicked = event.target;
+
+            showPage(listItem, isClicked.textContent);
+               for (let i = 0; i < clickLinks.length; i++) {
+                  clickLinks[i].classList.remove('active');
+                     if (isClicked){
+                        isClicked.className = 'active';
+                     }
+               }
+         });
+      }
+      paginationDiv.appendChild(ul);
+      container.appendChild(paginationDiv);
+};
+
+appendPageLinks(listItem);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
