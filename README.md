@@ -15,4 +15,4 @@ List of 54 students name, photos, and email addresses and show 10 names at a tim
 
 ```
 
-!<img width="1277" alt="image1" src="https://user-images.githubusercontent.com/49881831/64817368-b110bf00-d577-11e9-83df-9463f1655d9b.png">
+<img width="1277" alt="image1" src="https://user-images.githubusercontent.com/49881831/64817368-b110bf00-d577-11e9-83df-9463f1655d9b.png">
