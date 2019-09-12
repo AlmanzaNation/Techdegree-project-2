@@ -15,4 +15,4 @@ List of 54 students name, photos, and email addresses and show 10 names at a tim
 
 ```
 
-![Screen shot of randomQuote Generator](/Users/marioalmanza/Desktop/Treehouse Projects/Techdegree-project-2/Images /image1.png)
+![Screen shot of Pagination](file:///Users/marioalmanza/Desktop/Treehouse%20Projects/Techdegree-project-2/Images%20/image1.png)
