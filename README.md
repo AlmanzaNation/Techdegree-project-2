@@ -1,7 +1,7 @@
 # Project 2 - List Pagination 
 
 # Techdegree Project 2
-List Pagination 
+Pagination List
 
 ## Overview
 List of 54 students name, photos, and email addresses and show 10 names at a time and add a navigation system at the bottom of the page. This will let user to click through the other students entries, 10 at a time. 
@@ -15,5 +15,4 @@ List of 54 students name, photos, and email addresses and show 10 names at a tim
 
 ```
 
-![Alt text](Image/image1.png "Pagination")
-
+![Screen shot of Pagination](/https://github.com/AlmanzaNation/Techdegree-project-2/blob/master/Images%20/image1.png)
